@@ -125,5 +125,6 @@ def send_email(recipient, recipient_count):
 select_template()
 emails = get_dealer_emails()
 print('Found {0} email addresses'.format(len(emails)))
-# for count, email in enumerate(emails, start=1):
-#    send_email(email, count)
+
+for count, email in enumerate(emails, start=1):
+    send_email(email, count)
